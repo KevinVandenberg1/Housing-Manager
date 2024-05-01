@@ -11,7 +11,7 @@ public class Rentable extends Housing{
     public Rentable(String landlord, double rent, double credit, String tenant, boolean rentStatus, String address, 
         int rooms, double bedrooms, double bathrooms, boolean hasStudio, int capacity) {
         super(address, rooms, bedrooms, bathrooms, hasStudio, capacity);
-        if (credit < 1) {
+        if (credit < 1 && tenant != null) {
             throw new ArithmeticException("credit isn't a valid amount");
         }
         this.landlord = landlord;

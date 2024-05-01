@@ -179,7 +179,7 @@ public class TestClass {
     // Method for getting the information for a place that is rentable. Returns a rentable object
     public static Rentable rentableHouse(Scanner scanner, Housing tempObject) {
         String tenant = null;
-        double credit = 1;
+        double credit = 0;
 
         System.out.print("Landlord Name: ");
         String lName = scanner.nextLine();
