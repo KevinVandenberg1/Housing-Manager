@@ -1,4 +1,4 @@
-public class Housing {
+public class Housing{
 
     // Instance variables
     private String address;
